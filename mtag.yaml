@@ -1,0 +1,1105 @@
+# mtag.yaml - 'config' file for mtag.py. This file says what 'tags' to apply to
+# different files, authors, etc.
+
+# Map trivial email addr differences to the same identity here.
+# This is generally only for minor variants of an email address. Do not use
+# this when a person has different email addresses at different organizations;
+# those usually do need to kept separate, since the organization may actually
+# hold the relevant copyright.
+author_aliases:
+  mmeffie@sinenomine.net:
+  - mmeffie@aphid.sinenomine.net
+
+  shadow@dementix.org:
+  - shadow@dementia.org
+
+  jhutz@cmu.edu:
+  - jhutz@cs.cmu.edu
+
+  chas@cmf.nrl.navy.mil:
+  - chas.williams@cmf.nrl.navy.mil
+
+  3chas3@gmail.com:
+  - chas3@users.sourceforge.net
+
+  rtb@pclella.cern.ch:
+  - rainer.toebbicke@cern.ch
+
+  antoine@ualberta.ca:
+  - apv@ualberta.ca
+
+  klas.lindfors@it.su.se:
+  - klas@it.su.se
+
+  lha@stacken.kth.se:
+  - lha@e.kth.se
+
+  joda@pdc.kth.se:
+  - joda+openafs@pdc.kth.se
+
+  christof.hanke@rzg.mpg.de:
+  - hanke@rzg.mpg.de
+
+  aedil@alchar.org:
+  - aedil-afs@alchar.org
+
+# author_tags are mostly for identifying what company or other organization may
+# have the copyright for an author's contributions. If you specify an
+# author_tags entry like this:
+#
+# author_tags:
+#   foo@company.com:
+#   - org:company.com
+#
+# That means any commit authorzed by foo@company.com gets the tag
+# 'org:company.com'.
+author_tags:
+  adeason@sinenomine.net:
+  - org:sinenomine.net
+  cwills@sinenomine.net:
+  - org:sinenomine.net
+  mvitale@sinenomine.net:
+  - org:sinenomine.net
+  mmeffie@sinenomine.net:
+  - org:sinenomine.net
+  mbarbosa@sinenomine.net:
+  - org:sinenomine.net
+  tkeiser@sinenomine.net:
+  - org:sinenomine.net
+  jaltman@sinenomine.net:
+  - org:sinenomine.net
+  kvanhees@sinenomine.net:
+  - org:sinenomine.net
+  pruiter@sinenomine.net:
+  - org:sinenomine.net
+  ddiederen@sinenomine.net:
+  - org:sinenomine.net
+  neale@sinenomine.net:
+  - org:sinenomine.net
+  aedil@sinenomine.net:
+  - org:sinenomine.net
+
+  tkeiser@psu.edu:
+  - org:psu.edu
+
+  shadow@your-file-system.com:
+  - org:your-file-system.com
+  jaltman@your-file-system.com:
+  - org:your-file-system.com
+  marc.dionne@your-file-system.com:
+  - org:your-file-system.com
+  sxw@your-file-system.com:
+  - org:your-file-system.com
+
+  jaltman@auristor.com:
+  - org:auristor.com
+
+  jaltman@secure-endpoints.com:
+  - org:secure-endpoints.com
+
+  shadow@andrew.cmu.edu:
+  - org:cmu.edu
+  cg2v@andrew.cmu.edu:
+  - org:cmu.edu
+  jhutz@cmu.edu:
+  - org:cmu.edu
+  wcw@cmu.edu:
+  - org:cmu.edu
+  tardis@ece.cmu.edu:
+  - org:cmu.edu
+  jcurley@andrew.cmu.edu:
+  - org:cmu.edu
+  md5i@cs.cmu.edu:
+  - org:cmu.edu
+
+  marc.dionne@technoconseil.com:
+  - org:technoconseil.com
+
+  dionne@cs.wisc.edu:
+  - org:wisc.edu
+
+  sxw@inf.ed.ac.uk:
+  - org:ed.ac.uk
+
+  chas@cmf.nrl.navy.mil:
+  - org:navy.mil
+  kenh@cmf.nrl.navy.mil:
+  - org:navy.mil
+
+  jaltman@mit.edu:
+  - org:mit.edu
+  kolya@mit.edu:
+  - org:mit.edu
+  hartmans@mit.edu:
+  - org:mit.edu
+  kaduk@mit.edu:
+  - org:mit.edu
+  wollman@csail.mit.edu:
+  - org:mit.edu
+  andersk@mit.edu:
+  - org:mit.edu
+  zacheiss@mit.edu:
+  - org:mit.edu
+  warlord@mit.edu:
+  - org:mit.edu
+  marc@mit.edu:
+  - org:mit.edu
+  ted@mit.edu:
+  - org:mit.edu
+  ghudson@mit.edu:
+  - org:mit.edu
+  asedeno@mit.edu:
+  - org:mit.edu
+  broder@mit.edu:
+  - org:mit.edu
+  rbasch@mit.edu:
+  - org:mit.edu
+
+  nneul@umr.edu:
+  - org:umr.edu
+
+  rees@umich.edu:
+  - org:umich.edu
+  mdw@umich.edu:
+  - org:umich.edu
+  wingc@engin.umich.edu:
+  - org:umich.edu
+  kwc@citi.umich.edu:
+  - org:umich.edu
+  hollandp@umich.edu:
+  - org:umich.edu
+  scs@umich.edu:
+  - org:umich.edu
+
+  felix.frank@desy.de:
+  - org:desy.de
+  stephan.wiesand@desy.de:
+  - org:desy.de
+
+  ffrank@satyr4.ifh.de:
+  - org:ifh.de
+
+  rra@stanford.edu:
+  - org:stanford.edu
+  akosut@cs.stanford.edu:
+  - org:stanford.edu
+  quanah@stanford.edu:
+  - org:stanford.edu
+
+  rtb@pclella.cern.ch:
+  - org:cern.ch
+  Arne.Wiebalck@cern.ch:
+  - org:cern.ch
+  Daniel.Vanderster@cern.ch:
+  - org:cern.ch
+
+  antoine@ualberta.ca:
+  - org:ualberta.ca
+
+  tcreech@umd.edu:
+  - org:umd.edu
+  kevin@umd.edu:
+  - org:umd.edu
+
+  semerad@ss1000.ms.mff.cuni.cz:
+  - org:cuni.cz
+
+  lha@it.su.se:
+  - org:su.se
+  Sergio.Gelato@astro.su.se:
+  - org:su.se
+  klas.lindfors@it.su.se:
+  - org:su.se
+
+  lha@stacken.kth.se:
+  - org:kth.se
+  haba@pdc.kth.se:
+  - org:kth.se
+  mattiasa@e.kth.se:
+  - org:kth.se
+  joda@pdc.kth.se:
+  - org:kth.se
+
+  reuter@rzg.mpg.de:
+  - org:mpg.de
+  christof.hanke@rzg.mpg.de:
+  - org:mpg.de
+  menke@mppmu.mpg.de:
+  - org:mpg.de
+  hans@mpa-garching.mpg.de:
+  - org:mpg.de
+
+  Michael.Pronath@ei.tum.de:
+  - org:tum.de
+
+  Neale.Ferguson@softwareAG-usa.com:
+  - org:softwareAG-usa.com
+
+  dhowells@warthog.cambridge.redhat.com:
+  - org:redhat.com
+  jlayton@redhat.com:
+  - org:redhat.com
+
+  thomas.mueller@hrz.tu-chemnitz.de:
+  - org:tu-chemnitz.de
+
+  torkel@acc.umu.se:
+  - org:umu.se
+  niklas.edmundsson@hpc2n.umu.se:
+  - org:umu.se
+
+  tortay@cc.in2p3.fr:
+  - org:in2p3.fr
+
+  andrej.filipcic@ijs.si:
+  - org:ijs.si
+
+  botsch@cnf.cornell.edu:
+  - org:cornell.edu
+
+  emoy@apple.com:
+  - org:apple.com
+
+  gendalia@iastate.edu:
+  - org:iastate.edu
+
+  lass@mail.uni-paderborn.de:
+  - org:uni-paderborn.de
+
+  megacz@cs.berkeley.edu:
+  - org:berkeley.edu
+
+  oehmes@de.ibm.com:
+  - org:ibm.com
+  yadayada@in.ibm.com:
+  - org:ibm.com
+  jacobi@de.ibm.com:
+  - org:ibm.com
+  ejburcka@us.ibm.com:
+  - org:ibm.com
+  jimpeter@us.ibm.com:
+  - org:ibm.com
+  mpereira@almaden.ibm.com:
+  - org:ibm.com
+  somkar@in.ibm.com:
+  - org:ibm.com
+  riegel@almaden.ibm.com:
+  - org:ibm.com
+
+  daleg@umbc.edu:
+  - org:umbc.edu
+
+  toddr@rpi.edu:
+  - org:rpi.edu
+
+  christer.grafstrom@ltu.se:
+  - org:ltu.se
+
+  jmoss@ichips.intel.com:
+  - org:intel.com
+
+  Mike.Becher@lrz-muenchen.de:
+  - org:lrz-muenchen.de
+
+  seth.forshee@canonical.com:
+  - org:canonical.com
+
+# For every commit that adds 3 lines or fewer, give it the 'tiny' tag. These
+# commits are presumably not copyrightable.
+line_tags:
+  tiny_lines: 3
+  tiny_tags: [tiny]
+
+# file_tags are usually for identifying what license a file is under, and what
+# component the file is for, so we can determine whether we care about the
+# file. If you specify a file_tags entry like this:
+#
+# file_tags:
+#   src/afs/afs_cell.c:
+#   - linux-kernel
+#   - license:ibm
+#
+# That means that any commit that touches src/afs/afs_cell.c will get the tags
+# 'linux-kernel' and 'license:ibm'.
+file_tags:
+  # For AFS_component_version_number.c
+  src/config/Makefile.version-NOCML.in:
+  - linux-kernel
+  - license:ibm
+
+  # All of our .ss.c, .cs.c, and .xdr.c files are generated from rxgen, and
+  # so derived from src/rxgen/ code.
+  src/rxgen/*.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rxgen/rpc_errors.h:
+  - linux-kernel
+  - license:ibm
+  src/rxgen/rpc_parse.h:
+  - linux-kernel
+  - license:sunrpc
+  src/rxgen/rpc_scan.h:
+  - linux-kernel
+  - license:sunrpc
+  src/rxgen/rpc_util.h:
+  - linux-kernel
+  - license:sunrpc
+  src/rxgen/rxgen_consts.h:
+  - linux-kernel
+  - license:ibm
+
+  # For Kcallback.ss.c, afscbint.h
+  src/fsint/afscbint.xg:
+  - linux-kernel
+  - license:ibm
+
+  # For Kpagcb.ss.c, Kpagcb.xdr.c, pagcb.h
+  # Q: says IPL, but contributed in 2006
+  src/fsint/pagcb.xg:
+  - linux-kernel
+  - license:ibm_maybe
+
+  # For Krmtsys.cs.c, Krmtsys.xdr.c, rmtsys.h
+  src/sys/rmtsys.xg:
+  - linux-kernel
+  - license:ibm
+
+  # For Krxstat.ss.c, Krxstat.xdr.c, rxstat.h
+  src/rxstat/rxstat.xg:
+  - linux-kernel
+  - license:ibm
+
+  # For Ktoken.xdr.c, token.h
+  src/auth/token.xg:
+  - linux-kernel
+  - license:unknown
+
+  # For Kvice.cs.c, Kvice.xdr.c, afsint.h
+  src/fsint/afsint.xg:
+  - linux-kernel
+  - license:ibm
+
+  # For Kvldbint.cs.c, Kvldbint.xdr.c, vldbint.h
+  src/vlserver/vldbint.xg:
+  - linux-kernel
+  - license:ibm
+
+  src/afs/afs_analyze.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_axscache.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_buffer.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_bypasscache.c:
+  - linux-kernel
+  - license:bsdish
+  src/afs/afs_callback.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_cbqueue.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_cell.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_chunk.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_conn.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_daemons.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_dcache.c:
+  - linux-kernel
+  - license:ibm
+
+  # Q: says IPL, but contributed in 2008, with non-IBM copyright
+  src/afs/afs_disconnected.c:
+  - linux-kernel
+  - license:ibm_maybe
+
+  src/afs/afs_dynroot.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_error.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_exporter.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_fetchstore.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_icl.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_init.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_lock.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_mariner.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_memcache.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi_alloc.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi_pag.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi_uio.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi_vget.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi_vm.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osidnlc.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_pag_call.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_pag_cred.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_segments.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_server.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_stat.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_syscall.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_tokens.c:
+  - linux-kernel
+  - license:bsd
+  # For afs_user.o, afs_pag_user.o
+  src/afs/afs_user.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_util.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_vcache.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_volume.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_warn.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_access.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_attrs.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_create.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_dirops.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_fid.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_flock.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_link.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_lookup.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_open.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_read.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_readdir.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_remove.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_rename.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_strategy.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_symlink.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/VNOPS/afs_vnop_write.c:
+  - linux-kernel
+  - license:ibm
+
+  src/afs/LINUX/osi_alloc.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_compat.h:
+  - linux-kernel
+  - license:unknown
+  src/afs/LINUX/osi_cred.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_crypto.c:
+  - linux-kernel
+  - license:bsd
+  # Q: says IPL, but from 2006
+  src/afs/LINUX/osi_export.c:
+  - linux-kernel
+  - license:ibm_maybe
+  src/afs/LINUX/osi_file.c:
+  - linux-kernel
+  - license:ibm
+  # Q: says IPL, but commit is from 2005 (from ibm.com), and comments suggest
+  # it's copied from the Linux source tree?
+  src/afs/LINUX/osi_flush.s:
+  - linux-kernel
+  - license:ibm_maybe
+  src/afs/LINUX/osi_gcpags.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_groups.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_inode.c:
+  - linux-kernel
+  - license:ibm
+  # Ignore; blank file
+  #src/afs/LINUX/osi_inode.h:
+  src/afs/LINUX/osi_ioctl.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_machdep.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_misc.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_module.c:
+  - linux-kernel
+  - license:ibm
+  # Q: says IPL, but from 2006
+  src/afs/LINUX/osi_nfssrv.c:
+  - linux-kernel
+  - license:ibm_maybe
+  src/afs/LINUX/osi_pag_module.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_pagecopy.c:
+  - linux-kernel
+  - license:bsd
+  src/afs/LINUX/osi_pagecopy.h:
+  - linux-kernel
+  - license:bsd
+  # Q: says IPL (and bsd/gpl), but from 2005
+  src/afs/LINUX/osi_probe.c:
+  - linux-kernel
+  - license:ibm_maybe
+  src/afs/LINUX/osi_proc.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_prototypes.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_sleep.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_syscall.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_sysctl.c:
+  - linux-kernel
+  - license:unknown
+  src/afs/LINUX/osi_vcache.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_vfs.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_vfsops.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_vm.c:
+  - linux-kernel
+  - license:ibm
+  src/afs/LINUX/osi_vnodeops.c:
+  - linux-kernel
+  - license:ibm
+
+  src/util/afs_atomlist.c:
+  - linux-kernel
+  - license:ibm
+  src/util/afs_lhash.c:
+  - linux-kernel
+  - license:ibm
+  # For afs_uuid.o
+  src/util/uuid.c:
+  - linux-kernel
+  - license:ibm
+
+  src/dir/dir.c:
+  - linux-kernel
+  - license:ibm
+
+  # For opr_rbtree.o
+  src/opr/rbtree.c:
+  - linux-kernel
+  - license:bsd
+
+  # aka alloc-kernel.c
+  src/crypto/hcrypto/kernel/alloc.c:
+  - linux-kernel
+  - license:bsd
+  src/crypto/hcrypto/kernel/evp-algs.c:
+  - linux-kernel
+  - license:unknown
+  # For rand-kernel.c
+  src/crypto/hcrypto/kernel/rand.c:
+  - linux-kernel
+  - license:unknown
+  # For rand-timer-kernel.c
+  src/crypto/hcrypto/kernel/rand-timer.c:
+  - linux-kernel
+  - license:unknown
+  # For strcasecmp_pag.o
+  src/crypto/hcrypto/kernel/strcasecmp.c:
+  - linux-kernel
+  - license:ibm
+
+  # For rx.o, rx_pag.o
+  src/rx/rx.c:
+  - linux-kernel
+  - license:ibm
+  # For rx_call.o, rx_pag_call.o
+  src/rx/rx_call.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_clock.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_conn.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_event.c:
+  - linux-kernel
+  - license:bsd
+  src/rx/rx_getaddr.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_globals.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_identity.c:
+  - linux-kernel
+  - license:bsd
+  # For rx_kcommon.o, rx_pag_kcommon.o
+  src/rx/rx_kcommon.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_misc.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_multi.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_null.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_opaque.c:
+  - linux-kernel
+  - license:bsd
+  # For rx_packet.o, rx_pag_packet.o
+  src/rx/rx_packet.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_peer.c:
+  - linux-kernel
+  - license:ibm
+  # For rx_rdwr.o, rx_pag_rdwr.o
+  src/rx/rx_rdwr.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_stats.c:
+  - linux-kernel
+  - license:bsd
+  src/rx/xdr.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_afsuuid.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/xdr_array.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_arrayn.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_int32.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_int64.c:
+  - linux-kernel
+  - license:unknown
+  src/rx/xdr_len.c:
+  - linux-kernel
+  - license:bsd
+  src/rx/xdr_mem.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_refernce.c:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_rx.c:
+  - linux-kernel
+  - license:ibm
+  src/rx/xdr_update.c:
+  - linux-kernel
+  - license:sunrpc
+
+  # Don't bother specifying individual files in src/rx/LINUX; everything in
+  # here must be for Linux kernel stuff, and can't be for anything else. All of
+  # them have the same license/copyright.
+  src/rx/LINUX/*:
+  - linux-kernel
+  - license:ibm
+
+  src/rxkad/crypt_conn.c:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/fcrypt.c:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/rxkad_client.c:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/rxkad_common.c:
+  - linux-kernel
+  - license:ibm
+
+  src/rxstat/rxstat.c:
+  - linux-kernel
+  - license:ibm
+
+  # For crypto-context.o
+  src/crypto/rfc3961/context.c:
+  - linux-kernel
+  - license:unknown
+
+  # For crypto-copy.o
+  src/crypto/rfc3961/copy.c:
+  - linux-kernel
+  - license:unknown
+
+  src/config/afs_args.h:
+  - linux-kernel
+  - license:ibm
+  src/util/afs_atomlist.h:
+  - linux-kernel
+  - license:ibm
+  src/util/afs_lhash.h:
+  - linux-kernel
+  - license:ibm
+  src/config/afs_sysnames.h:
+  - linux-kernel
+  - license:ibm
+  src/dir/dir.h:
+  - linux-kernel
+  - license:ibm
+  src/opr/opr.h:
+  - linux-kernel
+  - license:unknown
+
+  # For param.h
+  src/config/param.*linux*.h:
+  - linux-kernel
+  - license:ibm
+
+  src/libacl/prs_fs.h:
+  - linux-kernel
+  - license:ibm
+  src/crypto/rfc3961/rfc3961.h:
+  - linux-kernel
+  - license:unknown
+  src/config/stds.h:
+  - linux-kernel
+  - license:ibm
+  src/vlserver/vl_opcodes.h:
+  - linux-kernel
+  - license:ibm
+  src/crypto/hcrypto/engine.h:
+  - linux-kernel
+  - license:unknown
+  src/rxkad/fcrypt.h:
+  - linux-kernel
+  - license:ibm
+
+  # For rxkad.h
+  src/rxkad/rxkad.p.h:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/rxkad_errs.et:
+  - linux-kernel
+  - license:ibm
+
+  src/rxkad/rxkad_prototypes.h:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/stats.h:
+  - linux-kernel
+  - license:ibm
+
+  # For src/afs/afs_trace.h
+  src/afs/afs_trace.et:
+  - linux-kernel
+  - license:ibm
+
+  # For unified_afs.h
+  src/afs/unified_afs.p.h:
+  - linux-kernel
+  - license:unknown
+  src/afs/unified_afs.et:
+  - linux-kernel
+  - license:unknown
+
+  # For afsconfig.h
+  src/config/afsconfig.h.in:
+  - linux-kernel
+  - license:unknown
+
+  src/afs/afs.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_axscache.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_bypasscache.h:
+  - linux-kernel
+  - license:bsdish
+  src/afs/afs_cbqueue.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_chunkops.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_consts.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_dynroot.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osi.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_osidnlc.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_prototypes.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_stats.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afs_util.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/afsincludes.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/discon.h:
+  - linux-kernel
+  - license:unknown
+  src/afs/exporter.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/lock.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/nfsclient.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/sysincludes.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/voldefs.h:
+  - linux-kernel
+  - license:ibm
+  src/afs/volerrors.h:
+  - linux-kernel
+  - license:ibm
+  src/config/icl.h:
+  - linux-kernel
+  - license:ibm
+  # Ignore this file; effectively blank
+  #src/crypto/hcrypto/kernel/assert.h:
+  src/crypto/hcrypto/kernel/config.h:
+  - linux-kernel
+  - license:bsd
+  src/crypto/hcrypto/kernel/evp-hcrypto.h:
+  - linux-kernel
+  - license:unknown
+  src/crypto/hcrypto/kernel/heim_threads.h:
+  - linux-kernel
+  - license:unknown
+  # Ignore; blank files
+  #src/crypto/hcrypto/kernel/krb5-types.h:
+  #src/crypto/hcrypto/kernel/roken.h:
+  # Effectively blank
+  #src/crypto/hcrypto/kernel/stdio.h:
+  #src/crypto/hcrypto/kernel/stdlib.h:
+  #src/crypto/hcrypto/kernel/string.h:
+  src/crypto/rfc3961/krb5_locl.h:
+  - linux-kernel
+  - license:unknown
+  src/opr/ffs.h:
+  - linux-kernel
+  - license:bsd
+  src/opr/jhash.h:
+  - linux-kernel
+  - license:bsd
+  src/opr/queue.h:
+  - linux-kernel
+  - license:bsd
+  src/opr/rbtree.h:
+  - linux-kernel
+  - license:unknown
+  src/rx/rx.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_atomic.h:
+  - linux-kernel
+  - license:bsd
+  src/rx/rx_call.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_clock.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_conn.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_event.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_globals.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_identity.h:
+  - linux-kernel
+  - license:bsd
+  src/rx/rx_internal.h:
+  - linux-kernel
+  - license:unknown
+  src/rx/rx_kcommon.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_kernel.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_misc.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_multi.h:
+  - linux-kernel
+  - license:ibm
+  # Ignore; effectively blank
+  #src/rx/rx_null.h:
+  src/rx/rx_opaque.h:
+  - linux-kernel
+  - license:bsd
+  src/rx/rx_packet.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_peer.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_prototypes.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/rx_server.h:
+  - linux-kernel
+  - license:unknown
+  src/rx/rx_stats.h:
+  - linux-kernel
+  - license:bsd
+  src/rx/rx_trace.h:
+  - linux-kernel
+  - license:ibm
+  src/rx/xdr.h:
+  - linux-kernel
+  - license:sunrpc
+  src/rx/xdr_prototypes.h:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/private_data.h:
+  - linux-kernel
+  - license:ibm
+  src/rxkad/sboxes.h:
+  - linux-kernel
+  - license:ibm
+
+# Don't worry about external files
+#  src/external/heimdal/hcrypto/rijndael-alg-fst.c:
+#  src/external/heimdal/krb5/crypto-aes.c:
+#  src/external/heimdal/krb5/crypto-algs.c:
+#  src/external/heimdal/krb5/crypto-evp.c:
+#  src/external/heimdal/krb5/crypto.c:
+#  src/external/heimdal/hcrypto/aes.c:
+#  src/external/heimdal/hcrypto/evp.c:
+#  src/external/heimdal/hcrypto/md5.c:
+#  src/external/heimdal/krb5/n-fold.c:
+#  src/external/heimdal/hcrypto/sha.c:
+#  # For sha256-kernel.o
+#  src/external/heimdal/hcrypto/sha256.c:
+#  # For crypto-ct.o
+#  src/external/heimdal/roken/ct.c:
+#  # For crypto-data.o
+#  src/external/heimdal/krb5/data.c:
+#  # For crypto-keyblock.o
+#  src/external/heimdal/krb5/keyblock.c:
+#  # For crypto-random.o
+#  src/crypto/rfc3961/kernel/random.c:
+#  # For crypto-store-int.o
+#  src/external/heimdal/krb5/store-int.c:
+#  src/external/heimdal/hcrypto/aes.h:
+#  src/external/heimdal/hcrypto/des.h:
+#  src/external/heimdal/hcrypto/evp-cc.h:
+#  src/external/heimdal/hcrypto/evp.h:
+#  src/external/heimdal/hcrypto/hash.h:
+#  src/external/heimdal/hcrypto/md5.h:
+#  src/external/heimdal/hcrypto/rand.h:
+#  src/external/heimdal/hcrypto/randi.h:
+#  src/external/heimdal/hcrypto/rc4.h:
+#  src/external/heimdal/hcrypto/rijndael-alg-fst.h:
+#  src/external/heimdal/hcrypto/sha.h:
+#  src/external/heimdal/krb5/crypto.h:
+
+commit_tags:
+  # This commit is just moving some preprocessor lines around; seems trivial.
+  114eb0c82773f9943ecd58316333319cf7a2dc3b:
+  - ignore
