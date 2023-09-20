@@ -687,10 +687,6 @@ file_tags:
   src/crypto/hcrypto/kernel/rand-timer.c:
   - linux-kernel
   - license:unknown
-  # For strcasecmp_pag.o
-  src/crypto/hcrypto/kernel/strcasecmp.c:
-  - linux-kernel
-  - license:ibm
 
   # For rx.o, rx_pag.o
   src/rx/rx.c:
