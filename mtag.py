@@ -70,7 +70,7 @@ def glob_path(args, path):
             raise Exception("internal error")
         yield path[len(args.repo)+1:]
 
-def parse_gitlog(cmd):
+def parse_gitlog(path, cmd):
     # Each commit in the 'git log' output should have a line for the sha1 and
     # email, then a line for --numstat, then a blank line (except for the last
     # commit, where we just hit EOF).
@@ -86,12 +86,21 @@ def parse_gitlog(cmd):
             continue
 
         if lines_added is None:
-            added, _, _ = line.split('\t')
-            lines_added = int(added)
-            continue
+            if line:
+                # The line for --numstat, which looks like:
+                # <n_added>\t<n_del>\t<path>
+                added, _, _ = line.split('\t')
+                lines_added = int(added)
+                continue
+            else:
+                # If the next line is blank, there is no numstat line, which
+                # means the commit changed no lines (this can happen if the
+                # commit only changed whitespace; we ignore whitespace-only
+                # changes).
+                lines_added = 0
 
         if line:
-            raise Exception(f"extra git log data: {line}")
+            raise Exception(f"extra git log data for {path}: {line}")
 
         yield sha,email,lines_added
         sha = None
@@ -227,14 +236,18 @@ def apply_tags(args, data, out_path):
         with contextlib.ExitStack() as stack:
             gitlogs = []
             for path in paths:
-                print(f"Running: git log --follow {path}")
-                argv = ['git', '-C', args.repo, 'log', '--pretty=format:%H,%ae', '-w', '--numstat', '--follow', path]
+                argv = ['git', '-C', args.repo, 'log',
+                        '--pretty=format:%H,%ae',
+                        '--ignore-all-space',
+                        '--numstat',
+                        '--follow', path]
+                print("+ " + ' '.join(argv))
                 child = subprocess.Popen(argv, stdout=subprocess.PIPE)
                 stack.enter_context(child)
                 gitlogs.append((path,child))
 
             for path, cmd in gitlogs:
-                for sha, email, lines_added in parse_gitlog(cmd):
+                for sha, email, lines_added in parse_gitlog(path, cmd):
                     data.process_commit(sha, email, path, lines_added)
 
     end = time.time()
